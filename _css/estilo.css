@@ -1,0 +1,117 @@
+#responsive {
+	display: none;
+}
+.menu {
+	margin-top: 2%;
+}
+.container {
+	max-height: 150px;
+}
+.direita {
+	text-align: right;
+}
+.centro {
+	text-align: center;
+}
+.nav-item {
+	font-size: 20pt;
+	padding-left: 5%;
+}
+#logo {
+	max-width: 100%
+}
+.texto {
+	text-align: justify;
+	font-size: 14pt;
+}
+#aviao {
+	min-width: 90%;
+	max-width: 100%;
+	padding-top: 4%;
+}
+h2, h4 {
+	font-weight: bold;
+}
+ul {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+}
+#centro { 
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	* {
+		margin-bottom: 3%;
+	}
+	.no-responsive {
+		display: none;
+	}
+	#responsive {
+		display: block;
+		width: 50%;
+	}
+	#toggle-img {
+		width: 50%;
+	}
+	#bnt-toggle {
+		width: 50px;
+		height: 50px;
+	}
+	#logo {
+		max-height: 100%;
+		margin-left: 55%;
+	}
+	.centro {
+		text-align: center;
+	}
+	.alinhamento {
+		font-size: 12pt;
+		text-align: center;
+		margin: 1em auto;
+	}
+	#navbarSupportedContent {
+		padding-top: 15%;
+		width: 100%;
+		margin-left: 50%;
+	}
+}
+
+	.col-sm-7 
+
+	.col-sm-5 {
+		min-height: 800px;
+		min-width: 90%;
+		max-width: 100%;
+		padding-top: 4%;
+		overflow: hidden;
+		position: relative;
+	}
+	#aviao {
+		position: absolute;
+		opacity: 0;
+		animation-name: anime;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes anime {
+		25% {
+			opacity: 1;
+			transform: scale(1.1,1.1);
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+
+	#aviao:nth-child(1) {
+	}
+
+	#aviao:nth-child(2) {
+		animation-delay: 5s;
+	}
+	#aviao:nth-child(3) {
+		animation-delay: 5s;
+	}
+}
